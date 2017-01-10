@@ -1,0 +1,223 @@
+/*Stylings For Contact App
+Author: OM
+*/
+
+body, html{
+	margin: 0;
+    // padding: 5px 0 0 5px;
+    font-size: 14px;
+    line-height: 1.4em;
+    //height: 900px;
+    display: flex;
+    font-family: Helvetica,Arial,sans-serif;
+
+}
+* {
+    box-sizing: border-box;
+}
+section{
+	//display: inline-flex;
+	border-right: 0.5px solid #e4dcdc;
+	//box-sizing: border-box;
+     height: 100vh;
+    // width: 100vh;
+}
+div#app > div{
+    display: flex;
+}
+#catagories{
+	flex:1;
+    padding: 0.2em 0;
+}
+#catagories .titleH{
+    display: block;
+}
+#contact-list{
+	flex: 2;
+    padding: 0.5em 0;
+    // height: 100vh;
+}
+#contact-list ul {
+    list-style: none;
+    padding: 0.5em 0;
+}
+#contact-list li{
+    line-height: 1.4em;
+}
+#contact-list li {
+    line-height: 1.8em;
+    padding: 0 0 0 0.5em;
+    
+}
+#contact-list li:checked,
+#contact-list li.selected{
+    background:#c5c0c0;
+}
+.titleH h1{
+    margin-bottom:0; 
+}
+#catagories{
+	background: #e4dcdc;
+}
+
+#contact-card{
+	flex: 5;
+	border:none;
+    width: 66%;
+}
+#contact_icon img{
+	background: url('default.jpg');
+}
+#search {
+    border-radius: 5px;
+    border: 1px solid #e4dcdc;
+    display: inline-block;
+    padding: 0.5em;
+    margin: 0 1em;
+    width: 94%;
+    font-size: 1em;
+    text-align: center;
+    line-height: 1em;
+}
+.lable-list h1{
+	padding: 0em 0em 0em 0.5em;
+    display: inline-block;
+    font-size: 1.4em;
+}
+
+#catagories ul, #contact_list ul {
+    list-style: none;
+    margin: 0;
+    padding: 1em 0;
+    width: 100%;
+    display: inline-block;
+}
+#catagories li, #contact_list li {
+    margin: 0;
+    line-height: 1em;
+    width: 100%;
+    display: inline-flex;
+}
+#contact_list li.selected,
+#contact_list li:focus
+{
+	background:#c5c0c0;
+
+}
+#catagories li.selected {
+    background: #2196F3;
+    // color:#ffffff;
+}
+#catagories li.selected a{
+	color: #ffffff;
+}
+#catagories a, #contact_list a {
+    padding: 0.5em;
+    text-decoration: none;
+    color: #333;
+}
+.contact-listings {
+    width: 100%;
+}
+#contact_details{
+	display: flex;
+	flex-direction: column;
+}
+.contact-cards{
+	flex:1;
+}
+.contact-cards div{
+	display: inline-block;
+
+}
+.contact-cards .image-cropper{
+    background: url(../default.png);
+}
+.desc-group {
+    width: 100%;
+    padding: 0.5em;
+    line-height: 1.4em;
+    /* border-bottom: #7e9a9a; */
+    border-bottom: 1px solid #e4dcdc;
+}
+div.desc-group:last-child{
+	border-bottom: none;
+}
+.desc-group label {
+    width: 6em;
+    display: inline-block;
+    color: #928484
+}
+.desc-group span {
+    display: inline-block;
+    width: 10em;
+}
+.image-cropper {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
+.contact-name input {
+    line-height: 2em;
+    font-size: 1.8em;
+    margin: 1em 0 0 4.5em;
+    border: none;
+    color: #928484;
+}
+.detail-desc {
+    margin: 5em 1em 0;
+}
+.desc-group input, .desc-group textarea {
+    font-size: 1em;
+    border: none;
+    resize: inherit;
+    outline: none;
+},
+textarea {
+    min-height: 4em;
+}
+.name-label {
+    margin: 0.3em 0.5em;
+}
+.edit-panel {
+    flex: 1;
+    position: fixed;
+    bottom: 0;
+    width: 200vh;
+    display: inline-flex;
+}
+button.add-btn{
+    /* padding: 1em; */
+    border-radius: 5px;
+    font-size: 2em;
+    width: 2em;
+    line-height: 0.8em;
+}
+button.share-btn, button.edit-btn {
+    border-radius: 5px;
+    font-size: 1.3em;
+    /* width: 2em; */
+    /* line-height: 0.8em; */
+}
+
+.add-section{
+	padding: 1em;
+    width: 45%;
+}
+.edit-section{
+    float: right;
+	padding: 1em;
+    width: 55%;
+}
